@@ -1,0 +1,41 @@
+body {
+    background-color: #FFFFFF;
+}
+
+body, html, .app {
+    height: 100%;
+    overflow: hidden;
+  }
+
+.centered {
+    position: fixed;
+    max-height: 34vmin;
+    max-width: 34vmin;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -17vmin;
+    margin-left: -17vmin;
+    overflow: hidden;
+    transition: transform 4s;
+}
+
+.centered:hover {
+    -webkit-transform: rotate(1440deg);
+    -moz-transform: rotate(1440deg);
+    -o-transform: rotate(1440deg);
+    -ms-transform: rotate(1440deg);
+    transform: rotate(1440deg);
+}
+
+
+@media (max-aspect-ratio: 3/4) {
+.centered {
+        max-height: 50%; 
+        max-width: 50%;
+        margin-top: -25%;
+        margin-left: -25%;
+        overflow: hidden}
+        
+    }
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */}
+
